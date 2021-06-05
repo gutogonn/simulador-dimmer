@@ -1,0 +1,359 @@
+fileFormatVersion: 2
+guid: 89ac1faf416c47c4eaa311b093844438
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 15.81
+    100002: //RootNode
+    100004: Azul_Claro
+    100006: Azul_Claro.001
+    100008: Azul_Claro.002
+    100010: Azul_Claro.003
+    100012: Bornes_1
+    100014: Bornes_2
+    100016: Botao_Interruptor
+    100018: Botao_Rele1
+    100020: Botao_Rele2
+    100022: Caixa_1
+    100024: Caixa_2
+    100026: Caixa_4
+    100028: Fios
+    100030: Interruptor
+    100032: Lampada_1
+    100034: Parede
+    100036: Preto
+    100038: Preto.001
+    100040: Rele_1
+    100042: Rele_2
+    100044: Tubo_1
+    100046: Tubo_2
+    100048: Tubo_4
+    100050: Verde
+    100052: Vermelho
+    100054: Vermelho.001
+    100056: Vermelho.002
+    100058: Vermelho.003
+    100060: Dimmer
+    100062: Dimmer.Btn
+    400000: 15.81
+    400002: //RootNode
+    400004: Azul_Claro
+    400006: Azul_Claro.001
+    400008: Azul_Claro.002
+    400010: Azul_Claro.003
+    400012: Bornes_1
+    400014: Bornes_2
+    400016: Botao_Interruptor
+    400018: Botao_Rele1
+    400020: Botao_Rele2
+    400022: Caixa_1
+    400024: Caixa_2
+    400026: Caixa_4
+    400028: Fios
+    400030: Interruptor
+    400032: Lampada_1
+    400034: Parede
+    400036: Preto
+    400038: Preto.001
+    400040: Rele_1
+    400042: Rele_2
+    400044: Tubo_1
+    400046: Tubo_2
+    400048: Tubo_4
+    400050: Verde
+    400052: Vermelho
+    400054: Vermelho.001
+    400056: Vermelho.002
+    400058: Vermelho.003
+    400060: Dimmer
+    400062: Dimmer.Btn
+    2100000: Bricks
+    2100002: Diffuse_Brown
+    2100004: Metallic1
+    2100006: Metallic2
+    2100008: Tube_Yellow
+    2100010: Tube_Black
+    2100012: Glossy_Bege
+    2100014: Preto
+    2100016: Glossy_Black
+    2100018: Glossy_Red
+    2100020: Glossy_Green
+    2100022: Glossy_Bege.002
+    2100024: 15.81_frente.001
+    2100026: Preto.002
+    2100028: Metallic1.002
+    2100030: Glossy_Blue
+    2100032: Glass
+    2100034: Glossy_Green2
+    2100036: Glossy_LightBlue
+    2300000: 15.81
+    2300002: Azul_Claro
+    2300004: Azul_Claro.001
+    2300006: Azul_Claro.002
+    2300008: Azul_Claro.003
+    2300010: Bornes_1
+    2300012: Bornes_2
+    2300014: Botao_Interruptor
+    2300016: Botao_Rele1
+    2300018: Botao_Rele2
+    2300020: Caixa_1
+    2300022: Caixa_2
+    2300024: Caixa_4
+    2300026: Interruptor
+    2300028: Lampada_1
+    2300030: Parede
+    2300032: Preto
+    2300034: Preto.001
+    2300036: Rele_1
+    2300038: Rele_2
+    2300040: Tubo_1
+    2300042: Tubo_2
+    2300044: Tubo_4
+    2300046: Verde
+    2300048: Vermelho
+    2300050: Vermelho.001
+    2300052: Vermelho.002
+    2300054: Vermelho.003
+    2300056: Dimmer
+    2300058: Dimmer.Btn
+    3300000: 15.81
+    3300002: Azul_Claro
+    3300004: Azul_Claro.001
+    3300006: Azul_Claro.002
+    3300008: Azul_Claro.003
+    3300010: Bornes_1
+    3300012: Bornes_2
+    3300014: Botao_Interruptor
+    3300016: Botao_Rele1
+    3300018: Botao_Rele2
+    3300020: Caixa_1
+    3300022: Caixa_2
+    3300024: Caixa_4
+    3300026: Interruptor
+    3300028: Lampada_1
+    3300030: Parede
+    3300032: Preto
+    3300034: Preto.001
+    3300036: Rele_1
+    3300038: Rele_2
+    3300040: Tubo_1
+    3300042: Tubo_2
+    3300044: Tubo_4
+    3300046: Verde
+    3300048: Vermelho
+    3300050: Vermelho.001
+    3300052: Vermelho.002
+    3300054: Vermelho.003
+    3300056: Dimmer
+    3300058: Dimmer.Btn
+    4300000: Parede
+    4300002: Caixa_1
+    4300004: Tubo_2
+    4300006: Tubo_1
+    4300008: Rele_2
+    4300010: Botao_Rele2
+    4300012: Rele_1
+    4300014: Botao_Rele1
+    4300016: Bornes_2
+    4300018: Bornes_1
+    4300020: 15.81
+    4300022: Caixa_2
+    4300024: Tubo_4
+    4300026: Lampada_1
+    4300028: Caixa_4
+    4300030: Interruptor
+    4300032: Botao_Interruptor
+    4300034: Vermelho.002
+    4300036: Verde
+    4300038: Azul_Claro.003
+    4300040: Vermelho
+    4300042: Vermelho.003
+    4300044: Azul_Claro.001
+    4300046: Azul_Claro.002
+    4300048: Azul_Claro
+    4300050: Preto
+    4300052: Preto.001
+    4300054: Vermelho.001
+    4300056: Dimmer
+    4300058: Dimmer.Btn
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 15.81_frente.001
+    second: {fileID: 2100000, guid: e018b91f33cacb047a0292e96c3d25d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bricks
+    second: {fileID: 2100000, guid: 5a7772be2df2e0a4986d99f132c30afe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Diffuse_Brown
+    second: {fileID: 2100000, guid: 4054bae98c5d51a4b8e797c32a28480f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 76c08482bb4a9ac4f885b8e44657e690, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glossy_Bege
+    second: {fileID: 2100000, guid: fc4fa280bbefbff40bf3ea020231d6df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glossy_Bege.002
+    second: {fileID: 2100000, guid: fc4fa280bbefbff40bf3ea020231d6df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glossy_Black
+    second: {fileID: 2100000, guid: e2278d4b0a0024e4b8a49d2262b73995, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glossy_Blue
+    second: {fileID: 2100000, guid: eb4f55d2e515bf045aebd4b773ec807f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glossy_Green
+    second: {fileID: 2100000, guid: 2bc3fce4cf91a0a49893599e1579d085, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glossy_Green2
+    second: {fileID: 2100000, guid: 09eb823693582364e99a2b48aa5600f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glossy_LightBlue
+    second: {fileID: 2100000, guid: a916108a72fbdfb4f834e14b2f3a904a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glossy_Red
+    second: {fileID: 2100000, guid: 9be99453c66214c44b56ea7868899b9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metallic1
+    second: {fileID: 2100000, guid: e192339125cf41944b0ec8120375d1f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metallic1.002
+    second: {fileID: 2100000, guid: e192339125cf41944b0ec8120375d1f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metallic2
+    second: {fileID: 2100000, guid: eb96d014bd6f99f498989f30a19ccc22, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Preto
+    second: {fileID: 2100000, guid: bb740705fcbf517419b30cb71c8253e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Preto.002
+    second: {fileID: 2100000, guid: bb740705fcbf517419b30cb71c8253e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube_Black
+    second: {fileID: 2100000, guid: 36e2b58014cf6a54189d3df3590dabd8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube_Yellow
+    second: {fileID: 2100000, guid: 6ecd2ed22e89056458660c1f4e470606, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
