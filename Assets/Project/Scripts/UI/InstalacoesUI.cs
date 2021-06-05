@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class DimmerUI : MonoBehaviour
+public class InstalacoesUI : MonoBehaviour
 {
+    [SerializeField] private Animator menuLateralAnim;
     [SerializeField] private List<Recipe> recipes;
     private List<string> filaSelecionados;
     private List<Button> filaSelecionadoButtons;
@@ -14,13 +16,6 @@ public class DimmerUI : MonoBehaviour
     [SerializeField] private Button caboPretoButton;
     [SerializeField] private Button caboVermelhoButton;
     private string fioSelecionado;
-
-    [Header("Opções")]
-    [SerializeField] private Button esquemaButton;
-    [SerializeField] private Button refazerButton;
-
-    [Header("Infos")]
-    [SerializeField] private List<Transform> infos;
 
     [Header("Seleção do Borne")]
     [SerializeField] private Button borneOpcao1Button;
@@ -44,8 +39,13 @@ public class DimmerUI : MonoBehaviour
     [SerializeField] private Button interruptorOpcao1Button;
     [SerializeField] private Button interruptorOpcao2Button;
 
+    [SerializeField] private Transform menuOpcoes;
+
     void Start()
     {
+        menuLateralAnim.Play("Base Layer.MENU_MOSTRAR", 0, 0f);
+
+        fioSelecionado = "f1";
         caboAzulButton.GetComponent<Animator>().Play("Base Layer.COR_SELECIONAR", 0, 0f);
         caboPretoButton.GetComponent<Animator>().Play("Base Layer.COR_ESCONDER", 0, 0f);
         caboVermelhoButton.GetComponent<Animator>().Play("Base Layer.COR_ESCONDER", 0, 0f);
@@ -73,12 +73,12 @@ public class DimmerUI : MonoBehaviour
 
         filaSelecionadoButtons = new List<Button>();
         filaSelecionados = new List<string>();
-
     }
 
     void LateUpdate()
     {
         ValidarSequencia();
+        VerificarAtivos();
     }
 
     private void ValidarSequencia()
@@ -116,5 +116,21 @@ public class DimmerUI : MonoBehaviour
     {
         filaSelecionados.Add(valor);
         filaSelecionadoButtons.Add(button);
+    }
+
+    private void VerificarAtivos()
+    {
+        bool proximoNivel = true;
+        foreach (Transform t in menuOpcoes)
+        {
+            if (t.GetComponent<CanvasGroup>().interactable) proximoNivel = false;
+        }
+
+        if (proximoNivel && !menuLateralAnim.GetCurrentAnimatorStateInfo(0).IsName("MENU_ESCONDER"))
+        {
+            menuLateralAnim.Play("Base Layer.MENU_ESCONDER", 0, 0f);
+        }
+
+        if (proximoNivel && AnimationTime.TempoAnimacaoAtual(menuLateralAnim) > 0.9f) SceneManager.LoadScene("Fase2");
     }
 }
