@@ -4,12 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class InterruptoresUI : MonoBehaviour
+public class Fase2UI : MonoBehaviour
 {
     [SerializeField] private Animator menuLateralAnim;
-
-    [SerializeField] private Animator interruptorAnim;
-    public int releAtivos;
+    private int releAtivos;
 
     void Start()
     {

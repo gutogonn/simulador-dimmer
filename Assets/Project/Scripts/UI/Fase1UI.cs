@@ -4,18 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class InstalacoesUI : MonoBehaviour
+public class Fase1UI : MonoBehaviour
 {
     [SerializeField] private Animator menuLateralAnim;
     [SerializeField] private List<Recipe> recipes;
-    private List<string> filaSelecionados;
-    private List<Button> filaSelecionadoButtons;
+    protected List<string> filaSelecionados;
+    protected List<Button> filaSelecionadoButtons;
 
     [Header("Seleção de Fio")]
     [SerializeField] private Button caboAzulButton;
     [SerializeField] private Button caboPretoButton;
     [SerializeField] private Button caboVermelhoButton;
-    private string fioSelecionado;
+    protected string fioSelecionado;
 
     [Header("Seleção do Borne")]
     [SerializeField] private Button borneOpcao1Button;
