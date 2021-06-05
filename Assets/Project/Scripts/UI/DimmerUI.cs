@@ -46,9 +46,13 @@ public class DimmerUI : MonoBehaviour
 
     void Start()
     {
-        caboAzulButton.onClick.AddListener(() => SelecionarFio("f1"));
-        caboPretoButton.onClick.AddListener(() => SelecionarFio("f2"));
-        caboVermelhoButton.onClick.AddListener(() => SelecionarFio("f3"));
+        caboAzulButton.GetComponent<Animator>().Play("Base Layer.COR_SELECIONAR", 0, 0f);
+        caboPretoButton.GetComponent<Animator>().Play("Base Layer.COR_ESCONDER", 0, 0f);
+        caboVermelhoButton.GetComponent<Animator>().Play("Base Layer.COR_ESCONDER", 0, 0f);
+
+        caboAzulButton.onClick.AddListener(() => SelecionarFio("f1", caboAzulButton));
+        caboPretoButton.onClick.AddListener(() => SelecionarFio("f2", caboPretoButton));
+        caboVermelhoButton.onClick.AddListener(() => SelecionarFio("f3", caboVermelhoButton));
 
         borneOpcao1Button.onClick.AddListener(() => AdicionarAfila("b1", borneOpcao1Button));
         borneOpcao2Button.onClick.AddListener(() => AdicionarAfila("b2", borneOpcao2Button));
@@ -99,9 +103,14 @@ public class DimmerUI : MonoBehaviour
         filaSelecionadoButtons = new List<Button>();
     }
 
-    private void SelecionarFio(string valor)
+    private void SelecionarFio(string valor, Button button)
     {
         fioSelecionado = valor;
+        if (!caboAzulButton.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("COR_ESCONDER")) caboAzulButton.GetComponent<Animator>().Play("Base Layer.COR_ESCONDER", 0, 0f);
+        if (!caboPretoButton.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("COR_ESCONDER")) caboPretoButton.GetComponent<Animator>().Play("Base Layer.COR_ESCONDER", 0, 0f);
+        if (!caboVermelhoButton.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("COR_ESCONDER")) caboVermelhoButton.GetComponent<Animator>().Play("Base Layer.COR_ESCONDER", 0, 0f);
+
+        button.GetComponent<Animator>().Play("Base Layer.COR_SELECIONAR", 0, 0f);
     }
     private void AdicionarAfila(string valor, Button button)
     {
