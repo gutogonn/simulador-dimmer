@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DimmerUI : MonoBehaviour
 {
-    private List<Recipe> recipes;
+    [SerializeField] private List<Recipe> recipes;
     private List<string> filaSelecionados;
     private List<Button> filaSelecionadoButtons;
 
@@ -69,25 +69,7 @@ public class DimmerUI : MonoBehaviour
 
         filaSelecionadoButtons = new List<Button>();
         filaSelecionados = new List<string>();
-        recipes = new List<Recipe>();
-        
-        Recipe r1 = new Recipe("f1", "b1", "d1");
-        recipes.Add(r1);
 
-        Recipe r2 = new Recipe("f1", "b2", "i1");
-        recipes.Add(r2);
-
-        Recipe r3 = new Recipe("f1", "b3", "l1");
-        recipes.Add(r3);
-
-        Recipe r4 = new Recipe("f3", "r1", "d3");
-        recipes.Add(r4);
-
-        Recipe r5 = new Recipe("f2", "d2", "i2");
-        recipes.Add(r5);
-
-        Recipe r6 = new Recipe("f2", "d4", "l2");
-        recipes.Add(r6);
     }
 
     void LateUpdate()
@@ -105,6 +87,7 @@ public class DimmerUI : MonoBehaviour
         {
             filaSelecionadoButtons[0].GetComponent<Animator>().Play("Base Layer.BTN_ACERTO", 0, 0f);
             filaSelecionadoButtons[1].GetComponent<Animator>().Play("Base Layer.BTN_ACERTO", 0, 0f);
+            recipe.obj.GetComponent<MeshRenderer>().enabled = true;
         }
         else
         {

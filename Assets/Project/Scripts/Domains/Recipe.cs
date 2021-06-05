@@ -6,6 +6,7 @@ public class Recipe
     public string fio;
     public string mid;
     public string end;
+    public Transform obj;
 
     public Recipe(string _fio, string _mid, string _end)
     {
