@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class DimmerUI : MonoBehaviour
 {
-    public List<Recipe> recipes;
-    public List<string> filaSelecionados;
-    public List<Button> filaSelecionadoButtons;
+    private List<Recipe> recipes;
+    private List<string> filaSelecionados;
+    private List<Button> filaSelecionadoButtons;
 
     [Header("Seleção de Fio")]
     [SerializeField] private Button caboAzulButton;
@@ -69,7 +69,8 @@ public class DimmerUI : MonoBehaviour
 
         filaSelecionadoButtons = new List<Button>();
         filaSelecionados = new List<string>();
-
+        recipes = new List<Recipe>();
+        
         Recipe r1 = new Recipe("f1", "b1", "d1");
         recipes.Add(r1);
 
