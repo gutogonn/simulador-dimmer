@@ -39,11 +39,16 @@ public class Fase1UI : MonoBehaviour
     [SerializeField] private Button interruptorOpcao1Button;
     [SerializeField] private Button interruptorOpcao2Button;
 
+    [Header("Telas")]
+    [SerializeField] private Transform informacoesTela;
+    [SerializeField] private Button fecharInformacoes;
     [SerializeField] private Transform menuOpcoes;
 
-    void Start()
+    private void Start()
     {
         menuLateralAnim.Play("Base Layer.MENU_MOSTRAR", 0, 0f);
+
+        fecharInformacoes.onClick.AddListener(() => FecharTelaInformacoes());
 
         fioSelecionado = "f1";
         caboAzulButton.GetComponent<Animator>().Play("Base Layer.COR_SELECIONAR", 0, 0f);
@@ -75,7 +80,7 @@ public class Fase1UI : MonoBehaviour
         filaSelecionados = new List<string>();
     }
 
-    void LateUpdate()
+    private void LateUpdate()
     {
         ValidarSequencia();
         VerificarAtivos();
@@ -85,7 +90,7 @@ public class Fase1UI : MonoBehaviour
     {
         if (filaSelecionados.Count < 2) return;
 
-        Recipe recipe = recipes.Find(f => f.fio.Equals(fioSelecionado) && f.mid.Equals(filaSelecionados[0]) && f.end.Equals(filaSelecionados[1]));
+        Recipe recipe = recipes.Find(f => f.fio.Equals(fioSelecionado) && (f.mid.Equals(filaSelecionados[0]) && f.end.Equals(filaSelecionados[1]) || f.mid.Equals(filaSelecionados[1]) && f.end.Equals(filaSelecionados[0])));
 
         if (recipe != null)
         {
@@ -133,4 +138,6 @@ public class Fase1UI : MonoBehaviour
 
         if (proximoNivel && AnimationTime.TempoAnimacaoAtual(menuLateralAnim) > 0.9f) SceneManager.LoadScene("Fase2");
     }
+
+    private void FecharTelaInformacoes() => Destroy(informacoesTela.gameObject);
 }

@@ -13,7 +13,7 @@ public class SpinObjectWithMouse : MonoBehaviour
         transform.Rotate(Vector3.forward, -rotX);
 
         Material bulbMat = bulbSource.GetComponent<MeshRenderer>().materials[2];
-        bulbMat.SetColor("_EmissionColor", new Vector4(bulbMat.color.r, bulbMat.color.g, bulbMat.color.b, 0) * (transform.eulerAngles.z / 100));
+        bulbMat.SetColor("_EmissionColor", new Vector4(bulbMat.color.r, bulbMat.color.g, bulbMat.color.b, 0) * (transform.eulerAngles.z / 500));
         
         lightSource.GetComponent<Light>().spotAngle = transform.eulerAngles.z / 2;
         if (lightSource.GetComponent<Light>().spotAngle > 150) lightSource.GetComponent<Light>().spotAngle = 150;

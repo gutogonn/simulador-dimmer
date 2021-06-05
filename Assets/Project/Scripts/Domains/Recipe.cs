@@ -7,11 +7,4 @@ public class Recipe
     public string mid;
     public string end;
     public Transform obj;
-
-    public Recipe(string _fio, string _mid, string _end)
-    {
-        this.fio = _fio;
-        this.mid = _mid;
-        this.end = _end;
-    }
 }

@@ -35,9 +35,6 @@ public class OpcoesUI : MonoBehaviour
         janela.GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 
-    private void Recarregar()
-    {
-        SceneManager.LoadScene("Fase1");
-    }
+    private void Recarregar() => SceneManager.LoadScene("Fase1");
 
 }

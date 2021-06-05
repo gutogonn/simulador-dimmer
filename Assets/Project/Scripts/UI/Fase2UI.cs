@@ -7,13 +7,11 @@ using UnityEngine.SceneManagement;
 public class Fase2UI : MonoBehaviour
 {
     [SerializeField] private Animator menuLateralAnim;
-    private int releAtivos;
+    protected int releAtivos;
 
-    void Start()
-    {
-        menuLateralAnim.Play("Base Layer.MENU_MOSTRAR", 0, 0f);
-    }
-    void LateUpdate()
+    private void Start() => menuLateralAnim.Play("Base Layer.MENU_MOSTRAR", 0, 0f);
+
+    private void LateUpdate()
     {
         RaycastHit hitInfo = new RaycastHit();
         bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo);
